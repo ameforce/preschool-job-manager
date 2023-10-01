@@ -50,9 +50,13 @@ class Getter:
         self.region_list = region_list
         return
 
+    def __print_selection(self, print_list: list[str]) -> None:
+        return
+
     def logic(self) -> None:
         self.__move_site(self.default_url)
         self.__update_region_list()
+        self.__print_selection()
         print(f'region: {self.region_list}')
 
         time.sleep(5090)
